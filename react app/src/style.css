@@ -1,0 +1,96 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.brand-name {
+  font-family: serif;
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;  
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.divider {
+  color: #888;
+  font-size: 0.8rem;
+  margin: 10px 0;
+  position: relative;
+}
+
+.social-login-button {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  font-size: 0.8rem;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.signup-container {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;  
+}
+
+#signup-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
