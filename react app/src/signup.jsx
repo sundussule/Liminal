@@ -1,54 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SignUp = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-
-  const handleSignUp = (e) => {
-    e.preventDefault();
-    console.log('Signing up with:', email, password);
-  };
-
   return (
-    <div id="signup-wrapper" className="login-wrapper">
-      <div id="signup-card" className="login-card">
-        <h1 className="brand-name">Liminal</h1>
-        
-        <form id="signup-form" onSubmit={handleSignUp}>
-          <input 
-            type="email" 
-            className="login-input" 
-            placeholder="Email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input 
-            type="password" 
-            className="login-input" 
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <input 
-            type="password" 
-            className="login-input" 
-            placeholder="Confirm password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-          <button type="submit" className="login-button">
-            Sign Up
-          </button>
-        </form>
-
-        <p className="footer-text">
-          Already have an account? <Link to="/login" className="login-link">Log in</Link>
-        </p>
-      </div>
+    <div className="mobile-card">
+      <h2 className="title">Sign Up</h2>
+      <input type="text" placeholder="Full Name" className="input-field" />
+      <input type="text" placeholder="Last Name" className="input-field" />
+      <input type="email" placeholder="Email" className="input-field" />
+      <input type="password" placeholder="Password" className="input-field" />
+      <button className="primary-btn">Sign Up</button>
+      
+      <p className="sub-text" style={{ marginTop: '20px' }}>
+        Already have an account? <Link to="/" className="login-link">Log in</Link>
+      </p>
     </div>
   );
 };
-
 export default SignUp;
