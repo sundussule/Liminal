@@ -347,3 +347,23 @@ button {
     opacity: 0.8;
   }
 }
+
+/* Removes default browser margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensures the body takes up the full viewport and sets the background */
+body {
+  margin: 0;
+  background-color: #000; /* Matches your dark theme */
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Ensure your main container doesn't have top margin */
+.mobile-app-container {
+  margin-top: 0 !important; 
+}

@@ -21,12 +21,26 @@ const Post = () => {
   return (
     <div style={pageStyle}>
       {/* Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <HiOutlineArrowLeft size={24} />
-        <span style={{ fontWeight: 'bold' }}>New Post</span>
-        <span style={{ color: '#0095f6', fontWeight: 'bold' }}>Next</span>
-      </div>
-
+<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+  <button 
+    onClick={() => navigate(-1)} 
+    style={{ 
+      background: 'none', 
+      border: 'none', 
+      cursor: 'pointer', 
+      padding: '0', 
+      color: '#fff', // Ensures the icon is visible
+      display: 'flex', 
+      alignItems: 'center' 
+    }}
+  >
+    <HiOutlineArrowLeft size={24} />
+  </button>
+  
+  <span style={{ fontWeight: 'bold' }}>New Post</span>
+  
+  <span style={{ color: '#0095f6', fontWeight: 'bold', cursor: 'pointer' }}>Next</span>
+</div>
       {/* Main Preview Area */}
       <div style={{ width: '100%', height: '300px', background: '#262626', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '10px' }}>
         <span style={{ color: '#888' }}>Select Media</span>
