@@ -5,7 +5,7 @@ import { HiHome, HiMagnifyingGlass, HiPlusCircle, HiFilm, HiUser, HiHeart, HiCha
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div style={{ width: '375px', height: '667px', border: '1px solid #dbdbdb', margin: '20px auto', display: 'flex', flexDirection: 'column', background: '#fff' }}>
+    <div className="device-frame" style={{ display: 'flex', flexDirection: 'column', background: '#fff' }}>
       
       {/* 1. Header: Instagram logo and top action icons */}
       <header style={{ padding: '10px 15px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

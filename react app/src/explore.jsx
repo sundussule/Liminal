@@ -7,13 +7,15 @@ const Explore = () => {
   const searchPageStyle = {
     backgroundColor: '#000',
     color: '#fff',
-    width: '375px',
-    height: '667px',
+    width: '100vw',
+    maxWidth: '100%',
+    height: '100vh',
     margin: '20px auto',
     padding: '10px',
     fontFamily: 'sans-serif',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    overflow:'hidden',
   };
 
   return (

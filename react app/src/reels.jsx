@@ -7,12 +7,15 @@ const Reels = () => {
   const reelStyle = {
     backgroundColor: '#000',
     color: '#fff',
-    width: '375px',
-    height: '667px',
+    width: '100vw',
+    maxWidth: '100%',
     margin: '20px auto',
     position: 'relative',
     fontFamily: 'sans-serif',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    display:'flex',
+    flexDirection:'column',
+    height:'100vh',
   };
 
   return (

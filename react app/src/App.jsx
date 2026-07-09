@@ -13,7 +13,7 @@ import Settings from './settings.jsx';
 function App() {
   return (
     <Router>
-      <div className="app-container">
+      {/* <div className="app-container"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<SignIn />} />
@@ -27,7 +27,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </Router>
   );
 }

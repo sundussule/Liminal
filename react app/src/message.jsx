@@ -7,13 +7,14 @@ const Message = () => {
   const messageStyle = {
     backgroundColor: '#000',
     color: '#fff',
-    width: '375px',
-    height: '667px',
+    width: '100%',
+    maxWidth: '375px',
     margin: '20px auto',
     padding: '10px',
     fontFamily: 'sans-serif',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    height:'100vh',
   };
 
   return (
